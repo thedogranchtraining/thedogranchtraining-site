@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>The Dog Ranch | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- IMPORTANT: This fixes GitHub Pages project-site links -->
+  <base href="/thedogranchtraining-site/">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,35 +17,33 @@
       color: #222;
     }
     header {
-      padding: 20px;
+      padding: 24px 18px;
       border-bottom: 1px solid #ddd;
     }
     nav a {
-      margin-right: 15px;
+      margin-right: 14px;
       text-decoration: none;
-      color: #1a1a1a;
+      color: #0b57d0;
       font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
-      padding: 30px;
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
+      padding: 24px 18px;
     }
     section {
-      margin-bottom: 50px;
-    }
-    .services a {
-      display: block;
-      margin: 10px 0;
-      font-weight: bold;
-      text-decoration: none;
-      color: #2b5dab;
+      margin-bottom: 40px;
     }
     footer {
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
       border-top: 1px solid #ddd;
+      padding: 18px;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #444;
     }
   </style>
 </head>
@@ -49,12 +51,12 @@
 <body>
 
 <header>
-<nav>
-  <a href="/thedogranchtraining-site/">Home</a>
-  <a href="/thedogranchtraining-site/about/">About Us</a>
-  <a href="/thedogranchtraining-site/services/">Our Services</a>
-  <a href="/thedogranchtraining-site/contact/">Contact</a>
-</nav>
+  <nav>
+    <a href="">Home</a>
+    <a href="#about">About Us</a>
+    <a href="services/">Our Services</a>
+    <a href="contact/">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -72,15 +74,18 @@
     <h2>About Us</h2>
     <p>
       Founded by Juliann Elmco, The Dog Ranch was built on a lifelong love of dogs
-      and a passion for helping owners and their dogs build strong, healthy relationships.
+      and a passion for helping owners and their dogs build strong, healthy
+      relationships through training, structure, and care.
     </p>
   </section>
 
-  <section class="services">
+  <section id="services">
     <h2>Our Services</h2>
-    <a href="/services/board-train/">Board &amp; Train</a>
-    <a href="/services/refresher/">Refresher Options</a>
-    <a href="/services/boarding/">Regular Boarding</a>
+    <ul>
+      <li><a href="services/board-train/">Board &amp; Train</a></li>
+      <li><a href="services/refresher/">Refresher Options</a></li>
+      <li><a href="services/boarding/">Regular Boarding</a></li>
+    </ul>
   </section>
 
 </main>
@@ -88,7 +93,7 @@
 <footer>
   <div>
     The Dog Ranch • Hereford Zone, MD •
-    <a href="/thedogranchtraining-site/contact/">Contact Us</a>
+    <a href="contact/">Contact Us</a>
   </div>
 </footer>
 
