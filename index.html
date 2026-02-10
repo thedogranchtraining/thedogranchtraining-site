@@ -2,212 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <base href="/thedogranchtraining-site/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Dog Ranch | Home</title>
-
+  <title>Home | The Dog Ranch</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #222;
-      background: #fafafa;
-    }
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e6e6e6;
-    }
-
-    nav {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 14px 18px;
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #1a1a1a;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 18px 44px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 40px;
-      font-weight: 500;
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-size: 30px;
-      font-weight: 500;
-      margin-top: 0;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin-bottom: 6px;
-    }
-
-    section {
-      background: #ffffff;
-      border: 1px solid #e6e6e6;
-      border-radius: 12px;
-      padding: 22px;
-      margin-bottom: 22px;
-    }
-
-    ol {
-      margin-left: 22px;
-    }
-
-    footer {
-      border-top: 1px solid #e6e6e6;
-      background: #ffffff;
-      padding: 26px 18px;
-      text-align: center;
-      color: #333;
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    footer strong {
-      font-size: 18px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background: #fafafa; }
+    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
+    nav a { margin-right: 16px; text-decoration: none; color: #0645ad; font-weight: 700; }
+    main { max-width: 900px; margin: 28px auto; padding: 0 18px; }
+    h1 { font-size: 40px; margin: 10px 0 20px; text-align: center; }
+    h2 { margin-top: 38px; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 16px 0; }
+    footer { margin-top: 60px; padding: 28px 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.95em; background: #fff; }
+    footer a { color: #0645ad; text-decoration: none; font-weight: 700; }
   </style>
 </head>
-
 <body>
 
-<header>
-  <nav>
-    <a href="./">Home</a>
-    <a href="services/">Our Services</a>
-    <a href="contact/">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="./">Home</a>
+      <a href="services/">Our Services</a>
+      <a href="contact/">Contact</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
+    <h1>Welcome to<br>The Dog Ranch</h1>
 
-  <h1>Welcome to<br />The Dog Ranch</h1>
+    <section class="card">
+      <h2>About Us</h2>
+      <p><strong>Welcome to The Dog Ranch!</strong></p>
+      <p>
+        We are an in-home dog training and boarding business located in the Hereford Zone of Northern Baltimore County.
+        We provide a safe, fun, and loving environment where dogs can immerse themselves in obedience training,
+        behavior modification, proper socialization, and more.
+      </p>
+      <p>
+        We offer a variety of services, including Board &amp; Train programs, Regular Boarding, and Spa Services,
+        all designed to support your dog’s well-being while giving you peace of mind.
+      </p>
+      <p>
+        <a href="services/" style="font-weight:700; text-decoration:none;">Visit Our Services →</a>
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>About Us</h2>
+    <section class="card">
+      <h2>Founding Owner</h2>
+      <p>
+        Hi, my name is Juliann, and I am the owner and founder of The Dog Ranch.
+      </p>
+      <p>
+        I have grown up with dogs by my side for as long as I can remember. If you asked my younger self what I wanted
+        to do when I grew up, the answer was always the same — something with dogs.
+      </p>
+      <p>
+        After graduating college, I moved back into my parents’ home and began my dog business there. Shortly after,
+        my parents gently suggested that it might be time for me to find my own place to board dogs. 😊
+      </p>
+      <p>
+        That led me to a small cottage on a farm, where a wonderful family gave me the opportunity to expand my dream
+        of caring for and working with dogs.
+      </p>
+      <p>
+        After a few years, I moved into my first home and continued welcoming dogs into my life, caring for them as if
+        they were my own while their families were away.
+      </p>
+      <p>
+        As the business grew, so did my family. We eventually moved into a larger home designed with dogs in mind —
+        much to the delight of our canine guests and their owners. We are incredibly grateful for the trust our clients
+        place in us. With our expanded space and property, we are now able to offer additional services, including
+        obedience training and behavior modification.
+      </p>
+    </section>
 
-    <p><strong>Welcome to The Dog Ranch!</strong></p>
+    <section class="card">
+      <h2>Mission</h2>
+      <p><strong>Our mission is two-fold:</strong></p>
+      <ol>
+        <li>
+          To help dogs and their owners build strong, healthy relationships through clear communication, consistent
+          training, and structured guidance—allowing them to live full, balanced lives together.
+        </li>
+        <li>
+          To extend the same care and love you have for your dog into our home, ensuring they feel safe, supported,
+          and well cared for during their stay with us.
+        </li>
+      </ol>
+    </section>
+  </main>
 
+  <footer>
+    <p><strong>The Dog Ranch</strong></p>
+    <p>Let us know how we can help!</p>
     <p>
-      We are an in-home dog training and boarding business located in the Hereford Zone of
-      Northern Baltimore County. We provide a safe, fun, and loving environment where dogs
-      can immerse themselves in obedience training, behavior modification, proper
-      socialization, and more.
+      <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a><br>
+      <a href="tel:14439350691">(443) 935-0691</a>
     </p>
-
-    <p>
-      We offer a variety of services, including Board &amp; Train programs, Regular Boarding,
-      and Spa Specials — all designed to support your dog’s well-being while giving you peace
-      of mind.
-    </p>
-  </section>
-
-  <section id="founder">
-    <h3>Founding Owner</h3>
-
-    <p>
-      Hi, my name is <strong>Juliann</strong>, and I am the owner and founder of The Dog Ranch.
-    </p>
-
-    <p>
-      I have grown up with dogs by my side for as long as I can remember. If you asked my
-      younger self what I wanted to do when I grew up, the answer was always the same —
-      something with dogs.
-    </p>
-
-    <p>
-      After graduating college, I moved back into my parents’ home and began my dog business
-      there. Shortly after, my parents gently suggested that it might be time for me to find
-      my own place to board dogs. 😊
-    </p>
-
-    <p>
-      That led me to a small cottage on a farm, where a wonderful family gave me the
-      opportunity to expand my dream of caring for and working with dogs.
-    </p>
-
-    <p>
-      After a few years, I moved into my first home and continued welcoming dogs into my
-      life, caring for them as if they were my own while their families were away.
-    </p>
-
-    <p>
-      As the business grew, so did my family. We eventually moved into a larger home
-      designed with dogs in mind — much to the delight of our canine guests and their
-      owners. With our expanded space and property, we are now able to offer additional
-      services, including obedience training and behavior modification.
-    </p>
-  </section>
-
-  <section id="mission">
-    <h3>Mission</h3>
-
-    <p><strong>Our mission is two-fold:</strong></p>
-
-    <ol>
-      <li>
-        To help dogs and their owners build strong, healthy relationships through clear
-        communication, consistent training, and structured guidance — allowing them to live
-        full, balanced lives together.
-      </li>
-      <li>
-        To extend the same care and love you have for your dog into our home, ensuring they
-        feel safe, supported, and well cared for during their stay with us.
-      </li>
-    </ol>
-  </section>
-
-  <section id="services">
-    <h3>Our Services</h3>
-
-    <p>
-      At The Dog Ranch, we offer thoughtfully designed training and boarding options to
-      support dogs and their owners at every stage.
-    </p>
-
-    <p>
-      <a href="services/" style="font-weight:700; text-decoration:none;">
-        Visit Our Services →
-      </a>
-    </p>
-  </section>
-
-</main>
-
-<footer style="text-align: center; padding: 30px 20px; font-size: 14px; color: #555; border-top: 1px solid #ddd; margin-top: 40px;">
-  <p><strong>The Dog Ranch</strong></p>
-  <p>Let us know how we can help!</p>
-  <p>
-    <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a><br>
-    <a href="tel:14439350691">(443) 935-0691</a>
-  </p>
-  <p>Located in the Hereford Zone, MD</p>
-<p>©2016–Present</p>
-<p>Property of The Dog Ranch Training.</p>
-<p>All rights reserved.</p>
-</footer>
+    <p>Located in the Hereford Zone, MD</p>
+    <p>©2016–Present</p>
+    <p>Property of The Dog Ranch Training.</p>
+    <p>All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
