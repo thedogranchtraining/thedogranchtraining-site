@@ -1,83 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Contact | The Dog Ranch</title>
-  <meta name="description" content="Contact The Dog Ranch for dog training and boarding in Northern Baltimore County, MD." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    :root { color-scheme: light; }
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; line-height:1.6; color:#222; }
-    header, main, footer { max-width: 860px; margin: 0 auto; padding: 24px; }
-    header { padding-top: 32px; }
-    nav a { margin-right: 14px; text-decoration: none; color:#0b57d0; font-weight:bold; }
-    nav a:hover { text-decoration: underline; }
-    h1 { margin: 12px 0 8px; }
-    .lead { margin-top: 6px; }
-    .card { border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 18px 0; }
-    .buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
-    .btn {
-      display:inline-block; padding:10px 14px; border:1px solid #111;
-      border-radius:10px; text-decoration:none; color:#111;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
     }
-    .muted { color:#555; font-size: 0.95rem; }
-    ul { margin: 10px 0 0 18px; }
-    footer { border-top: 1px solid #eee; margin-top: 24px; padding-top: 18px; }
+
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      background: #ffffff;
+    }
+
+    header a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0645ad;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      background: #ffffff;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .contact-block {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .contact-block a {
+      color: #0645ad;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 30px 20px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      font-size: 0.9em;
+      background: #ffffff;
+    }
+
+    footer a {
+      color: #0645ad;
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <nav aria-label="Primary">
-      <a href="/thedogranchtraining-site/">Home</a>
-      <a href="/thedogranchtraining-site/#about">About Us</a>
-      <a href="/thedogranchtraining-site/services/">Our Services</a>
-      <a href="/thedogranchtraining-site/contact/" aria-current="page">Contact</a>
-    </nav>
 
-    <h1>Contact The Dog Ranch</h1>
-    <p class="lead">We’d love to hear from you.</p>
-    <p class="muted">
-      If you have questions about our programs, want help deciding which option is the best fit for your dog, or want to check availability,
-      feel free to reach out.
-    </p>
-  </header>
+<header>
+  <a href="/">Home</a>
+  <a href="/services/">Services</a>
+</header>
 
-  <main>
-    <section class="card">
-      <h2>Get in Touch</h2>
+<main>
 
-      <p><strong>Call or Text:</strong> <a href="tel:+14439350691">(443) 935-0691</a><br />
-        <span class="muted">(Texting is welcome and often the quickest way to reach us.)</span>
-      </p>
+  <h1>Contact The Dog Ranch</h1>
 
-      <p><strong>Email:</strong> <a href="mailto:thedogranchtraining@gmail.com">thedogranchtraining@gmail.com</a></p>
+  <p style="text-align:center;"><strong>We’d love to hear from you!</strong></p>
 
-      <div class="buttons">
-        <a class="btn" href="tel:+14439350691">Call / Text</a>
-        <a class="btn" href="mailto:thedogranchtraining@gmail.com">Email Us</a>
-      </div>
-    </section>
+  <p>
+    If you have questions about our programs, want help deciding which option is the best fit for
+    your dog, or are looking to check availability, feel free to reach out. We’re always happy to
+    talk dogs and help you find the right fit!
+  </p>
 
-    <section class="card">
-      <h2>When You Reach Out</h2>
-      <p class="muted">To help us best assist you, it’s helpful (but not required) to include:</p>
-      <ul>
-        <li>Your dog’s age and breed</li>
-        <li>Any prior training or boarding experience</li>
-        <li>What you’re hoping to work on or improve</li>
-        <li>Your ideal timeframe</li>
-      </ul>
-      <p class="muted">We’ll walk you through the rest.</p>
-    </section>
+  <h2>Get in Touch</h2>
 
-    <section class="card">
-      <h2>Location</h2>
-      <p class="muted">Hereford Zone, Northern Baltimore County, Maryland. (Exact address provided after booking.)</p>
-    </section>
-  </main>
+  <div class="contact-block">
+    <strong>Call or Text</strong><br>
+    <a href="tel:14439350691">(443) 935-0691</a><br>
+    <em>(Texting is welcome and often the quickest way to reach us.)</em>
+  </div>
 
-<footer style="text-align: center; padding: 30px 20px; font-size: 14px; color: #555; border-top: 1px solid #ddd; margin-top: 40px;">
+  <div class="contact-block">
+    <strong>Email</strong><br>
+    <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>
+  </div>
+
+  <h2>When You Reach Out</h2>
+
+  <p>
+    To help us best assist you, it’s helpful (but not required) to include:
+  </p>
+
+  <ul>
+    <li>Your dog’s age and breed</li>
+    <li>Any prior training or boarding experience</li>
+    <li>What you’re hoping to work on or improve</li>
+    <li>Your ideal timeframe</li>
+  </ul>
+
+  <p><strong>We’ll walk you through the rest!</strong></p>
+
+</main>
+
+<footer>
   <p><strong>The Dog Ranch</strong></p>
   <p>Let us know how we can help!</p>
   <p>
@@ -85,9 +133,10 @@
     <a href="tel:14439350691">(443) 935-0691</a>
   </p>
   <p>Located in the Hereford Zone, MD</p>
-<p>©2016–Present</p>
-<p>Property of The Dog Ranch Training.</p>
-<p>All rights reserved.</p>
+  <p>©2016–Present</p>
+  <p>Property of The Dog Ranch Training.</p>
+  <p>All rights reserved.</p>
 </footer>
+
 </body>
 </html>
