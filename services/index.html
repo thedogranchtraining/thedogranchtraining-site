@@ -1,123 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <base href="/thedogranchtraining-site/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Services | The Dog Ranch</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #222;
-      background: #fafafa;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-      color: #555;
-      border-top: 1px solid #ddd;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: #555;
-      text-decoration: none;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background: #fafafa; }
+    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
+    nav a { margin-right: 16px; text-decoration: none; color: #0645ad; font-weight: 700; }
+    main { max-width: 900px; margin: 28px auto; padding: 0 18px; }
+    h1 { font-size: 36px; margin: 10px 0 20px; text-align: center; }
+    h2 { margin-top: 26px; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 16px 0; }
+    .card a { text-decoration: none; color: #222; display: block; }
+    .card a:hover { text-decoration: underline; }
+    .btnlink { display:inline-block; margin-top:10px; font-weight:700; color:#0645ad; }
+    footer { margin-top: 60px; padding: 28px 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.95em; background: #fff; }
+    footer a { color: #0645ad; text-decoration: none; font-weight: 700; }
   </style>
 </head>
-
 <body>
 
-<main>
-  <h1>Our Services</h1>
+  <header>
+    <nav>
+      <a href="./">Home</a>
+      <a href="services/">Our Services</a>
+      <a href="contact/">Contact</a>
+    </nav>
+  </header>
 
-  <h2>Board &amp; Train</h2>
-  <p>
-    Our Board &amp; Train programs offer an immersive training experience where dogs stay at The Ranch
-    and receive focused, hands-on training. Programs are designed to build reliable obedience,
-    improve manners, and establish a strong foundation for long-term success, all in a structured
-    and low-stress environment.
-  </p>
+  <main>
+    <h1>Our Services</h1>
 
-  <h2>Behavioral Consultation</h2>
-  <p>
-    Is your dog displaying unwanted or challenging behaviors? We offer behavioral consultations
-    to help identify the underlying causes of these behaviors and develop a thoughtful,
-    individualized plan to address them.
-  </p>
-  <p>
-    Behavioral consultations are typically incorporated into our Board &amp; Train programs
-    following an initial evaluation.
-  </p>
+    <div class="card">
+      <a href="services/board-train/">
+        <h2>Board &amp; Train</h2>
+        <p>
+          Our Board &amp; Train programs offer an immersive training experience where dogs stay at The Ranch and receive
+          focused, hands-on training. Programs are designed to build reliable obedience, improve manners, and establish
+          a strong foundation for long-term success, all in a structured and low-stress environment.
+        </p>
+        <span class="btnlink">View Board &amp; Train →</span>
+      </a>
+    </div>
 
-  <h2>Refresher Options</h2>
-  <p>
-    Even well-trained dogs benefit from occasional practice and reinforcement. Our Refresher Options
-    are available for dogs who have previously completed a Board &amp; Train program with us.
-  </p>
+    <div class="card">
+      <h2>Behavioral Consultation</h2>
+      <p>
+        Is your dog displaying unwanted or challenging behaviors? We offer behavioral consultations to help identify
+        the underlying causes of these behaviors and develop a thoughtful, individualized plan to address them.
+      </p>
+      <p>
+        Behavioral consultations are typically incorporated into our Board &amp; Train programs following an initial evaluation.
+      </p>
+    </div>
 
-  <p>Options include:</p>
-  <ul>
-    <li><strong>Refresher Week</strong> – A focused week of dedicated training to reinforce and strengthen previously learned commands</li>
-    <li><strong>Boarding with Maintenance</strong> – A boarding option that includes continued reinforcement of trained commands and manners</li>
-  </ul>
+    <div class="card">
+      <a href="services/refresher/">
+        <h2>Refresher Options</h2>
+        <p>
+          Even well-trained dogs benefit from occasional practice and reinforcement. Our Refresher Options are available
+          for dogs who have previously completed a Board &amp; Train program with us.
+        </p>
+        <p><strong>Options include:</strong></p>
+        <ul>
+          <li><strong>Refresher Week</strong> – A focused week of dedicated training to reinforce and strengthen previously learned commands</li>
+          <li><strong>Boarding with Maintenance</strong> – A boarding option that includes continued reinforcement of trained commands and manners</li>
+        </ul>
+        <span class="btnlink">View Refresher Options →</span>
+      </a>
+    </div>
 
-  <h2>Regular Boarding</h2>
-  <p>
-    Planning a trip? Our Regular Boarding option provides safe, comfortable overnight care
-    for dogs who have not completed a Board &amp; Train program.
-  </p>
-  <p>
-    Dogs stay in a calm, supervised environment and receive plenty of attention, care,
-    and social interaction while you’re away.
-  </p>
+    <div class="card">
+      <a href="services/boarding/">
+        <h2>Regular Boarding</h2>
+        <p>
+          Planning a trip? Our Regular Boarding option provides safe, comfortable overnight care for dogs who have not
+          completed a Board &amp; Train program.
+        </p>
+        <p>
+          Dogs stay in a calm, supervised environment and receive plenty of attention, care, and social interaction while you’re away.
+        </p>
+        <span class="btnlink">View Regular Boarding →</span>
+      </a>
+    </div>
 
-  <h2>Spa Specials</h2>
-  <p>
-    We also offer Spa Specials as optional add-ons to select services. These services help ensure
-    your dog returns home clean, comfortable, and refreshed following their stay at The Dog Ranch.
-  </p>
-</main>
+    <div class="card">
+      <h2>Spa Specials</h2>
+      <p>
+        We also offer Spa Specials as optional add-ons to select services. These services help ensure your dog returns home
+        clean, comfortable, and refreshed following their stay at The Dog Ranch.
+      </p>
+      <p><strong>Spa Specials are listed on the Regular Boarding page.</strong></p>
+      <p><a class="btnlink" href="services/boarding/">View Spa Specials →</a></p>
+    </div>
 
-<footer>
-  <p><strong>The Dog Ranch</strong></p>
-  <p>Let us know how we can help!</p>
-  <p>
-    <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a><br>
-    <a href="tel:14439350691">(443) 935-0691</a>
-  </p>
-  <p>Located in the Hereford Zone, MD</p>
-  <p>©2016–Present</p>
-  <p>Property of The Dog Ranch Training.</p>
-  <p>All rights reserved.</p>
-</footer>
+  </main>
+
+  <footer>
+    <p><strong>The Dog Ranch</strong></p>
+    <p>Let us know how we can help!</p>
+    <p>
+      <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a><br>
+      <a href="tel:14439350691">(443) 935-0691</a>
+    </p>
+    <p>Located in the Hereford Zone, MD</p>
+    <p>©2016–Present</p>
+    <p>Property of The Dog Ranch Training.</p>
+    <p>All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
