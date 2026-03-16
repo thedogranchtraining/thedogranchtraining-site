@@ -2,172 +2,358 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <base href="/thedogranchtraining-site/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Board & Train | The Dog Ranch</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background: #fafafa; }
-    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
-    nav a { margin-right: 16px; text-decoration: none; color: #0645ad; font-weight: 700; }
-    main { max-width: 900px; margin: 28px auto; padding: 0 18px; }
-    h1 { font-size: 36px; margin: 10px 0 20px; }
-    h2 { margin-top: 28px; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    ul { margin-top: 8px; }
-    footer { margin-top: 60px; padding: 28px 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.95em; background: #fff; }
-    footer a { color: #0645ad; text-decoration: none; font-weight: 700; }
-    .callout { font-weight: 700; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: linear-gradient(to right, #96a4a9, #d7d7d7, #96a4a9);
+    }
+
+    header {
+      padding: 18px 24px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 18px;
+    }
+
+    nav a:hover {
+      color: #2c7a4b;
+    }
+
+    main {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px 32px 70px;
+    }
+
+    .top-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      margin-bottom: 22px;
+    }
+
+    .top-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .intro-box {
+      max-width: 760px;
+      margin: 0 auto 34px;
+    }
+
+    .intro-box h1 {
+      font-size: 54px;
+      margin: 0 0 10px;
+      font-weight: 700;
+      color: #555;
+    }
+
+    .intro-box p {
+      margin: 0 0 16px;
+      font-size: 16px;
+    }
+
+    .info-section {
+      display: grid;
+      grid-template-columns: 480px 1fr;
+      gap: 0;
+      margin: 0 0 34px;
+      align-items: stretch;
+    }
+
+    .info-section img {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info-text {
+      background: #f7f7f7;
+      padding: 34px 40px;
+    }
+
+    .info-text h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin: 0 0 18px;
+    }
+
+    .info-text h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 28px 0 12px;
+    }
+
+    .info-text p {
+      margin: 0 0 16px;
+      font-size: 16px;
+    }
+
+    .info-text ul {
+      margin: 0 0 18px 22px;
+      padding: 0;
+    }
+
+    .info-text li {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .cta-box {
+      max-width: 900px;
+      margin: 50px auto 0;
+      text-align: center;
+      background: #f7f7f7;
+      padding: 38px 28px;
+    }
+
+    .cta-box h2 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      font-weight: 500;
+    }
+
+    .cta-box p {
+      margin: 0 0 20px;
+      font-size: 17px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #2c7a4b;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      border-radius: 8px;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding: 32px 18px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      background: #fff;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    footer a {
+      color: #0645ad;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1100px) {
+      .info-section {
+        grid-template-columns: 1fr;
+      }
+
+      .info-section img {
+        min-height: 320px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      main {
+        padding: 20px 20px 60px;
+      }
+
+      .top-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .top-gallery img {
+        height: 240px;
+      }
+
+      .intro-box h1 {
+        font-size: 42px;
+      }
+
+      .info-text {
+        padding: 28px 24px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <nav>
-      <a href="./">Home</a>
-      <a href="services/">Our Services</a>
-      <a href="contact/">Contact</a>
+      <a href="/thedogranchtraining-site/">Home</a>
+      <a href="/thedogranchtraining-site/services/">Our Services</a>
+      <a href="/thedogranchtraining-site/contact/">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Board &amp; Train</h1>
 
-    <div class="card">
+    <section class="top-gallery">
+      <img src="/thedogranchtraining-site/assets/images/board-train/top-1.jpeg" alt="Board and Train dog 1">
+      <img src="/thedogranchtraining-site/assets/images/board-train/top-2.jpeg" alt="Board and Train dog 2">
+      <img src="/thedogranchtraining-site/assets/images/board-train/top-3.jpeg" alt="Board and Train dog 3">
+    </section>
+
+    <section class="intro-box">
+      <h1>Board &amp; Train</h1>
       <p>
-        In our Board &amp; Train programs, your dog will stay at The Dog Ranch, where they will be taught and cared for by
-        the owner and founder, Juliann. Juliann is a certified trainer specializing in dog obedience and behavior modification.
+        In our Board &amp; Train programs, your dog will stay at The Dog Ranch, where they will be taught and cared for by the owner and founder, Juliann. Juliann is a certified trainer specializing in dog obedience and behavior modification.
       </p>
       <p>
         During their stay, dogs are cared for not only by Juliann, but also by her family, and are treated and loved as if they were our own.
       </p>
       <p>
-        Board &amp; Train is an excellent option for many dogs because it provides a stable, low-stress learning environment,
-        which is crucial for building new behaviors and establishing a strong foundation of obedience.
-      </p>
-      <p class="callout">
-        Board &amp; Train inquiries can be made by calling or texting <a href="tel:14439350691">(443) 935-0691</a>, or by emailing
-        <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>.
-      </p>
-    </div>
-
-    <h2>Things to Know</h2>
-    <div class="card">
-      <p>
-        While staying at The Dog Ranch, your dog will receive focused training and individualized attention, while also having
-        opportunities to socialize and play with other socially appropriate dogs.
+        Board &amp; Train is an excellent option for many dogs because it provides a stable, low-stress learning environment, which is crucial for building new behaviors and establishing a strong foundation of obedience.
       </p>
       <p>
-        All Board &amp; Train dogs stay inside the family home in a climate-controlled, kennel-style area, ensuring both safety and comfort.
-        There is no specific enrollment timeline — we work with your schedule and the availability of our space.
+        Board &amp; Train inquiries can be made by calling or texting (443) 935-0691, or by emailing TheDogRanchTraining@gmail.com.
       </p>
-    </div>
+    </section>
 
-    <h2>Requirements</h2>
-    <div class="card">
-      <p>All Board &amp; Train programs require owners to provide:</p>
-      <ul>
-        <li>Enough food to last the duration of the stay</li>
-        <li>A valid Rabies certificate</li>
-        <li>A current copy of vaccinations</li>
-        <li>Any medications your dog may need</li>
-      </ul>
-      <p><strong>A $100 non-refundable deposit is required to hold a Board &amp; Train space.</strong></p>
-    </div>
+    <section class="info-section">
+      <img src="/thedogranchtraining-site/assets/images/board-train/things-to-know.jpeg" alt="Things to know about Board and Train">
+      <div class="info-text">
+        <h2>Things to Know</h2>
+        <p>
+          While staying at The Dog Ranch, your dog will receive focused training and individualized attention, while also having opportunities to socialize and play with other socially appropriate dogs.
+        </p>
+        <p>
+          All Board &amp; Train dogs stay inside the family home in a climate-controlled, kennel-style area, ensuring both safety and comfort. There is no specific enrollment timeline — we work with your schedule and the availability of our space.
+        </p>
 
-    <h2>The Foundation</h2>
-    <div class="card">
-      <p>All Board &amp; Train packages include the following <strong>FOUNDATION</strong> skills:</p>
-      <ul>
-        <li>Initial Consultation</li>
-        <li>Manners – addressing common issues such as leash pulling, jumping on guests, barking, and bolting through doors</li>
-        <li>Heeling – your dog will heel at your side and automatically sit when you stop</li>
-        <li>Sit / Down</li>
-        <li>Down Stay – remaining in a down position at a designated location of your choice</li>
-        <li>Place – remaining at a designated place you select</li>
-        <li>Private Graduation Handover Session</li>
-      </ul>
-      <p><strong>PLUS:</strong><br>✔️ Three (3) FREE follow-up sessions at The Dog Ranch, usable within one year of graduation</p>
-    </div>
+        <h3>Requirements</h3>
+        <p>All Board &amp; Train programs require owners to provide:</p>
+        <ul>
+          <li>Enough food to last the duration of the stay</li>
+          <li>A valid Rabies certificate</li>
+          <li>A current copy of vaccinations</li>
+          <li>Any medications your dog may need</li>
+        </ul>
 
-    <h2>2 Week Course</h2>
-    <div class="card">
-      <p><strong>On-leash FOUNDATIONS Course</strong></p>
-      <p>Includes all FOUNDATION skills, with a focus on:</p>
-      <ul>
-        <li>Heeling (on leash)</li>
-        <li>Down Stay — approximately 15 minutes</li>
-        <li>Place — approximately 15 minutes</li>
-      </ul>
-      <p>Includes a bath at the end of training and a Herm Sprenger prong collar.</p>
-      <p><strong>Contact us for pricing</strong> to ensure this program is the best fit for you and your dog.</p>
-    </div>
+        <p><strong>A $100 non-refundable deposit is required to hold a Board &amp; Train space.</strong></p>
+      </div>
+    </section>
 
-    <h2>4 Week Course</h2>
-    <div class="card">
-      <p><strong>FOUNDATIONS Course plus Off-leash recall</strong></p>
-      <p>Includes all FOUNDATION skills, plus:</p>
-      <ul>
-        <li>Heeling (on leash)</li>
-        <li>Down Stay — approximately 15 minutes</li>
-        <li>Place — approximately 15 minutes</li>
-        <li>Recall and Place commands off leash</li>
-      </ul>
-      <p>
-        Includes a bath at the end of training, a Herm Sprenger prong collar, and a mini Educator remote e-collar (versatile and user-friendly).
-      </p>
-      <p><strong>Contact us for pricing</strong> to ensure this program is the best fit for you and your dog.</p>
-    </div>
+    <section class="info-section">
+      <img src="/thedogranchtraining-site/assets/images/board-train/foundation.jpeg" alt="Foundation skills">
+      <div class="info-text">
+        <h2>The Foundation</h2>
+        <p>All Board &amp; Train packages include the following FOUNDATION skills:</p>
+        <ul>
+          <li>Initial Consultation</li>
+          <li>Manners – addressing common issues such as leash pulling, jumping on guests, barking, and bolting through doors</li>
+          <li>Heeling – your dog will heel at your side and automatically sit when you stop</li>
+          <li>Sit / Down</li>
+          <li>Down Stay – remaining in a down position at a designated location of your choice</li>
+          <li>Place – remaining at a designated place you select</li>
+          <li>Private Graduation Handover Session</li>
+        </ul>
+        <p><strong>PLUS:</strong><br>✔ Three (3) FREE follow-up sessions at The Dog Ranch, usable within one year of graduation</p>
+      </div>
+    </section>
 
-    <h2>6 Week Course</h2>
-    <div class="card">
-      <p><strong>FOUNDATIONS Course plus Off-leash recall</strong></p>
-      <p>Includes all FOUNDATION skills, plus:</p>
-      <ul>
-        <li>Heeling (on leash)</li>
-        <li>Down Stay — approximately 30 minutes</li>
-        <li>Place — approximately 30 minutes</li>
-        <li>All commands both on and off leash</li>
-        <li>
-          Field Trips — your dog will accompany us on outings (stores, outdoor locations, etc.) to practice commands and reinforce
-          training in real-world environments
-        </li>
-      </ul>
-      <p>Includes a bath at the end of training, a Herm Sprenger prong collar, and a mini Educator remote e-collar.</p>
-      <p><strong>Contact us for pricing</strong> to ensure this program is the best fit for you and your dog.</p>
-    </div>
+    <section class="info-section">
+      <img src="/thedogranchtraining-site/assets/images/board-train/two-week.jpeg" alt="Two week course">
+      <div class="info-text">
+        <h2>2 Week Course:</h2>
+        <h3>On-leash FOUNDATIONS Course</h3>
+        <p>Includes all FOUNDATION skills, with a focus on:</p>
+        <ul>
+          <li>Heeling (on leash)</li>
+          <li>Down Stay – approximately 15 minutes</li>
+          <li>Place – approximately 15 minutes</li>
+        </ul>
+        <p>Includes a bath at the end of training and a Herm Sprenger prong collar.</p>
+        <p>Contact us for pricing to ensure this program is the best fit for you and your dog.</p>
+      </div>
+    </section>
 
-    <h2>Behavior Modification</h2>
-    <div class="card">
-      <p>
-        If your dog is experiencing behavioral challenges, we can help. We offer customized training programs designed to address
-        specific behavioral concerns through a structured and individualized approach.
-      </p>
-      <p>
-        After an initial consultation, you’ll work directly with Head Trainer Juliann to determine the most appropriate course of action for your dog.
-        Behavior Modification programs are available within the 4- or 6-week Board &amp; Train options.
-      </p>
-      <p><strong>Common behavioral concerns we work with include:</strong></p>
-      <ul>
-        <li>Aggression toward other dogs</li>
-        <li>History of biting</li>
-        <li>Resource guarding</li>
-        <li>Shyness</li>
-        <li>Anxiety</li>
-      </ul>
-      <p>
-        <strong>Contact us to discuss pricing</strong> and determine whether this option is the best fit for your dog.
-      </p>
-    </div>
+    <section class="info-section">
+      <img src="/thedogranchtraining-site/assets/images/board-train/four-week.jpeg" alt="Four week course">
+      <div class="info-text">
+        <h2>4 Week Course:</h2>
+        <h3>FOUNDATIONS Course plus Off-leash recall</h3>
+        <p>Includes all FOUNDATION skills, plus:</p>
+        <ul>
+          <li>Heeling (on leash)</li>
+          <li>Down Stay – approximately 15 minutes</li>
+          <li>Place – approximately 15 minutes</li>
+          <li>Recall and Place commands off leash</li>
+        </ul>
+        <p>Includes a bath at the end of training, a Herm Sprenger prong collar, and a mini Educator remote e-collar (versatile and user-friendly).</p>
+        <p>Contact us for pricing to ensure this program is the best fit for you and your dog.</p>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <img src="/thedogranchtraining-site/assets/images/board-train/six-week.jpeg" alt="Six week course">
+      <div class="info-text">
+        <h2>6 Week Course:</h2>
+        <h3>FOUNDATIONS Course plus Off-leash recall</h3>
+        <p>Includes all FOUNDATION skills, plus:</p>
+        <ul>
+          <li>Heeling (on leash)</li>
+          <li>Down Stay – approximately 30 minutes</li>
+          <li>Place – approximately 30 minutes</li>
+          <li>All commands both on and off leash</li>
+          <li>Field Trips — your dog will accompany us on outings (stores, outdoor locations, etc.) to practice commands and reinforce training in real-world environments</li>
+        </ul>
+        <p>Includes a bath at the end of training, a Herm Sprenger prong collar, and a mini Educator remote e-collar.</p>
+        <p>Contact us for pricing to ensure this program is the best fit for you and your dog.</p>
+      </div>
+    </section>
+
+    <section class="cta-box">
+      <h2>Ready to Get Started?</h2>
+      <p>If you think Board &amp; Train may be the right fit for your dog, reach out and we’ll help you decide which option best fits your goals.</p>
+      <a class="cta-button" href="/thedogranchtraining-site/contact/">Contact The Dog Ranch</a>
+    </section>
 
   </main>
 
   <footer>
     <p><strong>The Dog Ranch</strong></p>
     <p>Let us know how we can help!</p>
-    <p>
-      <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a><br>
-      <a href="tel:14439350691">(443) 935-0691</a>
-    </p>
+    <p><a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a></p>
+    <p><a href="tel:14439350691">(443) 935-0691</a></p>
     <p>Located in the Hereford Zone, MD</p>
     <p>©2016–Present</p>
     <p>Property of The Dog Ranch Training.</p>
