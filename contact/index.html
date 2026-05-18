@@ -5,20 +5,110 @@
   <base href="/thedogranchtraining-site/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | The Dog Ranch</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background: #fafafa; }
-    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
-    nav a { margin-right: 16px; text-decoration: none; color: #0645ad; font-weight: 700; }
-    main { max-width: 900px; margin: 28px auto; padding: 0 18px; }
-    h1 { font-size: 36px; margin: 10px 0 8px; text-align: center; }
-    .subtitle { text-align:center; margin-top:0; }
-    h2 { margin-top: 28px; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    ul { margin-top: 8px; }
-    footer { margin-top: 60px; padding: 28px 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.95em; background: #fff; }
-    footer a { color: #0645ad; text-decoration: none; font-weight: 700; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      padding: 18px 24px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 18px;
+    }
+
+    .contact-logo {
+      display: block;
+      max-width: 180px;
+      height: auto;
+      margin: 0 auto 24px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 10px 0 8px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 26px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 22px;
+      margin: 18px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    ul {
+      margin-top: 8px;
+    }
+
+    a {
+      color: #0645ad;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 28px 18px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95em;
+      background: #fff;
+    }
+
+    footer a {
+      color: #0645ad;
+      text-decoration: none;
+      font-weight: 700;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -30,6 +120,9 @@
   </header>
 
   <main>
+
+    <img class="contact-logo" src="assets/images/tdrt-website-logo-home.png" alt="The Dog Ranch logo">
+
     <h1>Contact The Dog Ranch</h1>
     <p class="subtitle"><strong>We'd love to hear from you!</strong></p>
 
@@ -42,25 +135,32 @@
     </div>
 
     <h2>Get in Touch</h2>
+
     <div class="card">
-      <p><strong>Call or Text</strong><br>
+      <p>
+        <strong>Call or Text</strong><br>
         <a href="tel:14439350691">(443) 935-0691</a><br>
-        <em>(Texting is welcome and often the quickest way to reach us.)</em>
+        <em>Texting is welcome and often the quickest way to reach us.</em>
       </p>
-      <p><strong>Email</strong><br>
+
+      <p>
+        <strong>Email</strong><br>
         <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>
       </p>
     </div>
 
     <h2>When You Reach Out</h2>
+
     <div class="card">
-      <p>To help us best assist you, it's helpful (but not required) to include:</p>
+      <p>To help us best assist you, it's helpful to include:</p>
+
       <ul>
         <li>Your dog's age and breed</li>
         <li>Any prior training or boarding experience</li>
         <li>What you're hoping to work on or improve</li>
         <li>Your ideal timeframe</li>
       </ul>
+
       <p><strong>We'll walk you through the rest!</strong></p>
     </div>
 
