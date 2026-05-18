@@ -5,18 +5,159 @@
   <base href="/thedogranchtraining-site/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refresher Options | The Dog Ranch</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #222; background: #fafafa; }
-    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
-    nav a { margin-right: 16px; text-decoration: none; color: #0645ad; font-weight: 700; }
-    main { max-width: 900px; margin: 28px auto; padding: 0 18px; }
-    h1 { font-size: 36px; margin: 10px 0 20px; }
-    h2 { margin-top: 28px; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 18px; margin: 16px 0; }
-    footer { margin-top: 60px; padding: 28px 18px; border-top: 1px solid #ddd; text-align: center; font-size: 0.95em; background: #fff; }
-    footer a { color: #0645ad; text-decoration: none; font-weight: 700; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      padding: 18px 24px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin: 0 0 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .intro-section,
+    .split-section,
+    .cta-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .text-box {
+      max-width: 520px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .policy-note {
+      background: #f3f8f4;
+      border-left: 5px solid #2c7a4b;
+      padding: 18px 20px;
+      margin-top: 22px;
+      border-radius: 8px;
+    }
+
+    .policy-note p {
+      margin: 0 0 10px;
+    }
+
+    .policy-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #0645ad;
+    }
+
+    .green-link {
+      color: #2c7a4b;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 28px 18px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.95em;
+      background: #fff;
+    }
+
+    footer a {
+      color: #0645ad;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .intro-section,
+      .split-section,
+      .cta-section {
+        grid-template-columns: 1fr;
+        padding: 26px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .image-box img {
+        height: 320px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -28,63 +169,111 @@
   </header>
 
   <main>
-    <h1>Refresher Options</h1>
 
-    <div class="card">
-      <p>
-        After completing one of our Board &amp; Train programs, dogs are eligible for one of our Refresher options:
-        Boarding with Maintenance or a Refresher Week. These options are designed to help maintain or reinforce the skills
-        your dog has already learned with us.
-      </p>
-    </div>
+    <section class="intro-section">
+      <div class="text-box">
+        <h1>Refresher Options</h1>
 
-    <h2>Boarding with Maintenance</h2>
-    <div class="card">
-      <p>
-        Once your dog has completed a Board &amp; Train program at The Dog Ranch, they may qualify for our Boarding with Maintenance option.
-      </p>
-      <p>
-        This is a great alternative to standard boarding. Your dog will stay with the people they already know and trust,
-        while receiving continued reinforcement of the commands and manners learned during their previous training.
-      </p>
-      <p><strong>Price:</strong> Discounted compared to Regular Boarding</p>
-      <p>
-        To inquire about availability, call or text <a href="tel:14439350691">(443) 935-0691</a> or email
-        <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>.
-      </p>
-    </div>
+        <p>
+          After completing one of our Board &amp; Train programs, dogs are eligible for one of our Refresher options:
+          Boarding with Maintenance or a Refresher Week. These options are designed to help maintain and reinforce the
+          skills your dog has already learned with us.
+        </p>
 
-    <h2>Refresher Week</h2>
-    <div class="card">
-      <p>
-        After completing a Board &amp; Train program, your dog is also eligible for a Refresher Week. This option is ideal if you’ve found it
-        challenging to consistently maintain your dog’s training at home.
-      </p>
-      <p>
-        During a Refresher Week, we revisit and reinforce all of the skills your dog learned in their most recent Board &amp; Train program.
-        Unlike Boarding with Maintenance, this option includes dedicated daily training time, focused on reteaching and strengthening skills
-        that may have gone unmaintained.
-      </p>
-      <p>
-        A handover session is included at pickup, during which we review the skills your dog has refreshed and provide guidance for handlers
-        on how to continue maintaining them at home.
-      </p>
-      <p><strong>Contact us for pricing</strong> to determine whether this option is the best fit for you and your dog.</p>
-    </div>
+        <div class="policy-note">
+          <p>
+            <strong>Refresher Options are available exclusively to dogs that have completed a Board &amp; Train program through The Dog Ranch.</strong>
+          </p>
+          <p>
+            This helps ensure that your dog, your trainer, and you as the owner are all on the same page and speaking
+            the same language, allowing us to provide the most consistent and effective results.
+          </p>
+        </div>
+      </div>
 
-    <h2>Something not quite in any one box?</h2>
-    <div class="card">
-      <p><strong>We’re happy to help.</strong></p>
-      <p>
-        If your situation doesn’t fit neatly into one of the options above, reach out and let’s talk it through.
-        We’re always open to discussing your dog’s needs and finding the right solution.
-      </p>
-      <p>
-        Call or text <a href="tel:14439350691">(443) 935-0691</a> or email
-        <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>.
-      </p>
-      <p>We’d love to work with you and your dog.</p>
-    </div>
+      <div class="image-box">
+        <img src="assets/images/refresher-main.jpeg" alt="Two dogs relaxing in the grass">
+      </div>
+    </section>
+
+    <section class="split-section">
+      <div class="text-box">
+        <h2>Boarding with Maintenance</h2>
+
+        <p>
+          Once your dog has completed a Board &amp; Train program at The Dog Ranch, they may qualify for our
+          Boarding with Maintenance option.
+        </p>
+
+        <p>
+          This is a great alternative to standard boarding. Your dog will stay with the people they already know and trust,
+          while receiving continued reinforcement of the commands and manners learned during their previous training.
+        </p>
+
+        <p><strong>Price:</strong> Discounted compared to Regular Boarding</p>
+
+        <p>
+          To inquire about availability, call or text <a href="tel:14439350691">(443) 935-0691</a> or email
+          <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="assets/images/boarding-maintenance.jpeg" alt="Dog relaxing by the pond">
+      </div>
+    </section>
+
+    <section class="split-section">
+      <div class="image-box">
+        <img src="assets/images/refresher-week.jpeg" alt="Dog sitting in the grass during refresher training">
+      </div>
+
+      <div class="text-box">
+        <h2>Refresher Week</h2>
+
+        <p>
+          After completing a Board &amp; Train program, your dog is also eligible for a Refresher Week. This option is
+          ideal if you’ve found it challenging to consistently maintain your dog’s training at home.
+        </p>
+
+        <p>
+          During a Refresher Week, we revisit and reinforce all of the skills your dog learned in their most recent
+          Board &amp; Train program. Unlike Boarding with Maintenance, this option includes dedicated daily training time,
+          focused on reteaching and strengthening skills that may have gone unmaintained.
+        </p>
+
+        <p>
+          A handover session is included at pickup, during which we review the skills your dog has refreshed and provide
+          guidance for handlers on how to continue maintaining them at home.
+        </p>
+
+        <p><strong>Contact us for pricing</strong> to determine whether this option is the best fit for you and your dog.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="text-box">
+        <h2>Something not quite in any one box?</h2>
+
+        <p><strong>We’re happy to help.</strong></p>
+
+        <p>
+          If your situation doesn’t fit neatly into one of the options above, reach out and let’s talk it through.
+          We’re always open to discussing your dog’s needs and finding the right solution.
+        </p>
+
+        <p>
+          Call or text <a href="tel:14439350691">(443) 935-0691</a> or email
+          <a href="mailto:TheDogRanchTraining@gmail.com">TheDogRanchTraining@gmail.com</a>.
+        </p>
+
+        <p>We’d love to work with you and your dog.</p>
+      </div>
+
+      <div class="image-box">
+        <img src="assets/images/custom-help.jpeg" alt="Juliann with a dog">
+      </div>
+    </section>
 
   </main>
 
